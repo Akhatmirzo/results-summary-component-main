@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: hsl(241, 84%, 90%) 2.4px 2.2px 15.2px;
+    border-radius: 25px;
+}
+
+.result_box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px 0px 50px;
+    background-image: linear-gradient(hsl(252, 100%, 67%) , hsl(241, 81%, 54%));
+    border-radius: 25px;
+    gap: 1.5rem;
+}
+
+.result_box h2 {
+    font-weight: 700;
+    font-size: 22px;
+    color: hsl(241, 100%, 89%);
+}
+
+.circle_box {
+    width: 185px;
+    height: 185px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle_box h1 {
+    font-weight: 800;
+    font-size: 3em;
+    color: white
+}
+
+.circle_box p {
+    color: hsl(241, 100%, 89%);
+    font-weight: 400;
+}
+
+.res_el {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.res_h1 {
+    font-size: 1.5em;
+    color: white;
+    font-weight: 800;
+}
+
+.res_p {
+    font-weight: 400;
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+}
+
+.summary_box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 25px 25px 0;
+    padding: 50px 40px 30px 40px;
+    gap: 1.5rem;
+}
+
+.summaryText {
+    font-weight: 700;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.category_box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.category:nth-child(1) {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+}
+.category:nth-child(2) {
+    background-color: hsl(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+}
+.category:nth-child(3) {
+    background-color: hsl(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+}
+.category:nth-child(4) {
+    background-color: hsl(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.category_text {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.category_text span {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+.btn:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%) , hsl(241, 81%, 54%));
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 16px;
+    }
+    .main {
+        height: auto;
+    }
+
+    .container {
+        max-width: 768px;
+    }
+    
+    .box {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: hsl(241, 84%, 90%) 2.4px 2.2px 15.2px;
+        border-radius: 25px;
+    }
+    
+    .result_box {
+        width: 100%;
+        padding: 25px 30px 40px 30px;
+        border-radius: 0 0 25px 25px;
+        gap: 1rem;
+    }
+    
+    .result_box h2 {
+        font-size: 20px;
+    }
+
+    .circle_box {
+        width: 130px;
+        height: 130px;
+        
+    }
+    
+    .circle_box h1 {
+        font-size: 2em;
+    }
+    
+    .circle_box p {
+        font-size: 14px;
+    }
+    
+    .res_el {
+        gap: 0.9rem;
+    }
+    
+    .res_h1 {
+        font-size: 1.2em;
+    }
+    
+    .summary_box {
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0 25px 25px 0;
+        padding: 25px 30px 30px 30px;
+        gap: 1.5rem;
+    }
+    
+    .summaryText {
+        font-size: 20px;
+    }
+    
+    .category_box {
+        gap: 1rem;
+    }
+    
+    .left {
+        gap: 0.5rem;
+    }
+
+    .btn {
+        margin: 0;
+    }
+}
+
